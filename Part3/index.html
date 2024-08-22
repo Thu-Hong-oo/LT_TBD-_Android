@@ -15,12 +15,39 @@
         const dataB2_Dolphin = [97, 112, 101]
         const dataB2_Koalas = [109, 95, 106]
 
-        let sum = 0;
-        for (const a of daTa1_Dolphins) {
-            sum += a
-        }
-        const avgData1 = sum / daTa1_Dolphins.length
-        console.log(avgData1)
+        let sum1Dolphin = 0;
+        let sum1Koalas = 0;
+        daTa1_Dolphins.forEach(function(element) {
+            sum1Dolphin += element;
+        });
+        daTa1_Koalas.forEach(function(element) {
+            sum1Koalas += element;
+        });
+
+        let sumBonus1D = 0;
+        let sumBonus1K = 0;
+        daTaB1_Dolphins.forEach(function(element) {
+            sum1Dolphin += element;
+        });
+        daTaB1_Koalas.forEach(function(element) {
+            sum1Koalas += element;
+        });
+
+        let sumBonus2D = 0;
+        let sumBonus2K = 0;
+        daTaB2_Dolphins.forEach(function(element) {
+            sum1Dolphin += element;
+        });
+        daTaB2_Koalas.forEach(function(element) {
+            sum1Koalas += element;
+        });
+
+        if (daTa1_Dolphins == daTa1_Koalas >= 100)
+            console.log('draw')
+
+
+
+        console.log(sum1)
     </script>
 </head>
 
